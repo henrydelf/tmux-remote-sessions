@@ -109,6 +109,9 @@ do
         # unmodified bind_key
         send_key='C-\\\\'
         key_name="C-Backslash"
+    elif [[ $bind_key == '|' ]]; then
+	send_key="'|'"
+	key_name="Pipe"
     else
         # unmodified bind_key
         send_key="$bind_key"

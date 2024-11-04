@@ -42,6 +42,8 @@ do
         bind_key="\"'\""
     elif [ $bind_key == "\"" ]; then
         bind_key="'\"'"
+    elif [ $bind_key == "|" ]; then
+	bind_key="'|'"
     fi
 
     quote_semicolons "$bind_command"
